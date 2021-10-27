@@ -1,0 +1,203 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.signIn {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signIn_logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  object-fit: contain;
+  width: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.signIn_container {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+
+.signIn_container > h1 {
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.signIn_text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signIn_text > h5 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.signIn_text > p {
+  margin-top: 22px;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.signIn_text > p > a {
+  color: #0066c0;
+}
+
+.signIn_text > p > a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.signIn_text > p > a:hover {
+  border-bottom: 1px solid;
+  color: #c35500;
+}
+
+.signIn_container > form > input {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  width: 98%;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+}
+
+.signIn_container > form > input:focus {
+  outline: none;
+  border-color: #f2820a;
+  box-shadow: 0 0 6px #f2820a;
+}
+
+.signIn_container > p {
+  margin-top: 15px;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.signIn_container > p > a {
+  color: #0066c0;
+}
+
+.signIn_container > p > a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.signIn_container > p > a:hover {
+  border-bottom: 1px solid;
+  color: #c35500;
+}
+
+.signIn_signIn {
+  background: linear-gradient(#f7dea1, #f0c14d);
+  border: 0.5px solid #aaaaaa;
+  border-radius: 3px;
+  width: 100%;
+  height: 35px;
+  border: 1px solid;
+  margin-top: 10px;
+  color: #111;
+  border-color: #a88734 #9c7e31 #846a29;
+  cursor: pointer;
+}
+
+.signIn_signIn:hover {
+  border-bottom: 1px solid;
+  background: linear-gradient(#f5d68a, #eeba36);
+}
+
+.signIn_signIn:focus {
+  outline: none;
+  border-color: #f2820a;
+  box-shadow: 0 0 6px #f2820a;
+}
+
+.footer > p {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #555;
+}
+
+.footer > p > a {
+  color: #0066c0;
+}
+
+.footer > p > a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer > p > a:hover {
+  border-bottom: 1px solid;
+  color: #c35500;
+}
+
+.line {
+  width: 100%;
+  border-top: 1px solid #e2dede;
+  margin-top: 30px;
+}
+
+.signIn_checkbox {
+ display: flex;
+ margin-top: 10px;
+ font-size: 13px;
+ margin-left: -3px;
+ font-weight: 500;
+}
+
+.signIn_checkbox > label > input {
+  vertical-align: middle;
+  margin-bottom: 5px;
+  
+}
+
+.signIn_button {
+  border: none;
+  background-color: white;
+  color: #0066c0;
+}
+
+.signIn_button > h5 {
+margin-top: 2px;
+
+}
+
+.icon {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='rgb(61, 61, 61)' height='24' viewBox='0 0 24 24' width='45px' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 50%;
+}
+
+.signIn_button > h5:hover {
+  border-bottom: 1px solid;
+  color: #c35500;
+  cursor: pointer;
+}
+
+
+
+
