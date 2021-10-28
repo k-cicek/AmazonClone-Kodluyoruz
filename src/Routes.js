@@ -1,17 +1,15 @@
-import React, { useContext } from "react";
-import {
-  HashRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import React from "react";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
 
 function Routes() {
   return (
     <div className="Routes">
       <Router>
         <Switch>
-          <Route path="/"></Route>
+          <Route path="/">
+            <Navbar />
+          </Route>
         </Switch>
       </Router>
     </div>
