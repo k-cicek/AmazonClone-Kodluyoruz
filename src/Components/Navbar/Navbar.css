@@ -35,7 +35,7 @@
 /* Hover */
 .hover-white-border {
   display: flex;
-  padding: 10px;
+  padding: 8px;
   border: 1px solid transparent;
 }
 .hover-white-border:hover {
@@ -51,7 +51,7 @@
 
 #nav-belt {
   min-width: 1000px;
-  height: 4.3rem;
+  height: 3.7rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -70,6 +70,7 @@
 .nav-fill {
   display: flex;
   align-items: center;
+  margin-left: 0.5rem;
   flex: 7;
 }
 
@@ -97,6 +98,7 @@
 .location-logo-container {
   display: flex;
   align-items: flex-end;
+  padding: 0 0.2rem;
   margin: 0.1rem;
 }
 .location-logo {
@@ -107,7 +109,7 @@
   display: flex;
   flex: 7;
   border: 1px solid transparent;
-  border-radius: 0.3rem;
+  border-radius: 0.4rem;
 }
 
 .nav-search-bar-form {
@@ -117,7 +119,7 @@
   display: flex;
   background-color: #dadada;
   color: rgb(61, 61, 61);
-  font: 300 0.9em/100% "Helvetica Neue", Arial, sans-serif;
+  font: 300 0.75em/100% "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5em;
   text-align: left;
 }
@@ -131,9 +133,9 @@ select {
   background-position-x: 108%;
   background-position-y: 50%;
   border: 1px solid transparent;
-  border-radius: 0.4rem 0 0 0.4rem;
-  padding: 0.7rem;
-  width: 70px;
+  border-radius: 0.3rem 0 0 0.3rem;
+  padding: 0.5rem;
+  width: 75px;
 }
 
 .nav-searchbar-form input:focus {
@@ -153,7 +155,7 @@ select {
   -webkit-box-shadow: 0 0 0 1px #f90, 0 0 0 3px rgb(255 153 0 / 50%);
   -moz-box-shadow: 0 0 0 1px #f90, 0 0 0 3px rgb(255 153 0 / 50%);
   box-shadow: 0 0 0 1px #f90, 0 0 0 3px rgb(255 153 0 / 50%);
-  border-radius: 0.4rem 0 0 0.4rem;
+  border-radius: 0.3rem 0 0 0.3rem;
   z-index: 1;
 }
 .searchbar-input {
@@ -173,7 +175,7 @@ select {
 
 .searchIcon-container {
   background-color: #febd69;
-  max-width: 45px;
+  max-width: 50px;
   border: 1px solid transparent;
   border-radius: 0 0.4rem 0.4rem 0;
   flex: 1;
