@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.register {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register_logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  object-fit: contain;
+  width: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.register_divider {
+  position: relative;
+  line-height: 1;
+  
+}
+
+.register_divider > p {
+ margin-top: 40px;
+ font-size: 12px;
+ text-align: left;
+ font-weight: 500;
+
+}
+
+.register_divider > p > a {
+ color: #0066c0;
+}
+
+.register_divider > p > a:link {
+ text-decoration: none;
+ color: #fff;
+}
+
+.register_divider > p > a:hover {
+ border-bottom: 1px solid;
+ color: #c35500;
+}
+
+.register_divider::before,
+.register_divider::after {
+  content: "";
+  width: 60%;
+  display: block;
+  height: 1px;
+  border-top: 1px solid #e2dede;
+  position: absolute;
+  top: 10%;
+  margin-top: -1px;
+  z-index: 1;
+}
+.register_divider::after {
+  left: -1em;
+}
+.register_divider::before {
+  right: -1em;
+}
+
+
+.register_container {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+
+.register_container > h1 {
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.register_container > form > h5 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.register_container > form > input {
+  height: 30px;
+  margin-bottom: -9px;
+  background-color: #fff;
+  width: 98%;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
+}
+
+.register_container > form > input:focus {
+  outline: none;
+  border-color: #f2820a;
+  box-shadow: 0 0 6px #f2820a;
+}
+
+.register_container > p {
+  margin-top: 15px;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.register_container > p > a {
+  color: #0066c0;
+}
+
+.register_container > p > a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.register_container > p > a:hover {
+  border-bottom: 1px solid;
+  color: #c35500;
+}
+
+.register_signIn {
+  background: linear-gradient(#f7dea1, #f0c14d);
+  border: 0.5px solid #aaaaaa;
+  border-radius: 3px;
+  width: 100%;
+  height: 35px;
+  border: 1px solid;
+  margin-top: 20px;
+  color: #111;
+  border-color: #a88734 #9c7e31 #846a29;
+  cursor: pointer;
+}
+
+.register_signIn:hover {
+  border-bottom: 1px solid;
+  background: linear-gradient(#f5d68a, #eeba36);
+}
+
+.register_signIn:focus {
+  outline: none;
+  border-color: #f2820a;
+  box-shadow: 0 0 6px #f2820a;
+}
+
+.footer > p {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #555;
+}
+
+.footer > p > a {
+  color: #0066c0;
+}
+
+.footer > p > a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer > p > a:hover {
+  border-bottom: 1px solid;
+  color: #c35500;
+}
+
+.line {
+  width: 100%;
+  border-top: 1px solid #e2dede;
+  margin-top: 30px;
+}

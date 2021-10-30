@@ -1,0 +1,53 @@
+.modalBackground {
+ position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,.2);
+	text-align: center;
+}
+
+.modalContainer{
+	display: inline-block;
+	margin-top: 85px;
+	box-shadow: 0 3px 5px 0 rgba(0,0,0,.2);
+	color: #444;
+	position: relative;
+
+}
+
+.modalHeader {
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+		float: left;
+		border-bottom: 1px solid #dadada;
+		background-color: #f1f1f1;
+}
+
+.cancelButton {
+ border: none;
+	background-color: #f1f1f1;
+}
+
+.cancelButton:hover {
+ cursor: pointer;
+}
+
+.body {
+ width: 400px;
+			min-height: 170px;
+			background-color: white;
+			text-align: left;
+}
+
+.body > p {
+ padding-top: 50px;
+	padding-left: 10px;
+
+}
+
+.title > h4 {
+	padding-left: 10px;
+}

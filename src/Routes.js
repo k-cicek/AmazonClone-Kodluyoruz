@@ -1,6 +1,13 @@
 import React from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Pages/Home";
+import Header from "./Components/Header";
+import Navbar from "./Components/Navbar";
+import Account from "./Components/LoginPage/Account&Login Issues/Account";
+import Login from "./Components/LoginPage/Login/Login";
+import Password from "./Components/LoginPage/PasswordAssistance/Password";
+import Register from "./Components/LoginPage/Register/Register";
+import SignIn from "./Components/LoginPage/SignIn/SignIn";
 
 function Routes() {
   return (
@@ -9,6 +16,21 @@ function Routes() {
         <Switch>
           <Route path="/">
             <Home></Home>
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/signIn">
+            <SignIn />
+          </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
+          <Route path="/forgotPassword">
+            <Password />
+          </Route>
+          <Route path="/account">
+            <Account />
           </Route>
         </Switch>
       </Router>
