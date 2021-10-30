@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import {
@@ -8,8 +8,14 @@ import {
   searchIcon,
 } from "./assets/img/index";
 import { categoriesList } from "./assets/navbarData";
-
 function Navbar() {
+  // ************** auto resizing the select tag for searchbar ************************
+  const [value, setValue] = useState("All");
+  const handleChangeSelect = (e) => {
+    setValue(e.target.value);
+  };
+  // ************** show sub nav ************************
+
   return (
     <nav>
       <div id="nav-belt">
@@ -42,11 +48,20 @@ function Navbar() {
         </div>
         <div className="nav-fill">
           <form className="nav-searchbar-form searchbar-container">
-            <select className="categories" title="Search in">
-              {categoriesList.map((category) => (
-                <option key={category.id}> {category.value} </option>
-              ))}
-            </select>
+            <div className="categories-container">
+              <select
+                className="categories"
+                title="Search in"
+                style={{ width: value.length * 9.5 }}
+                onChange={handleChangeSelect}
+              >
+                {categoriesList.map((category) => (
+                  <option key={category.id} value={category.value}>
+                    {category.value}
+                  </option>
+                ))}
+              </select>
+            </div>
 
             <input className="searchbar-input" type="text" />
 
@@ -57,7 +72,11 @@ function Navbar() {
         </div>
         <div className="nav-right">
           <div className=" language-container">Flag</div>
-          <div className=" signIn-container ">
+          <div
+            className=" signIn-container "
+            onMouseOver="show()"
+            onMouseOut="hide()"
+          >
             <Link className="hover-white-border" to="/login">
               <div className="lines-style ">
                 <span className="first-line">Hello, Sign in</span>
@@ -76,7 +95,7 @@ function Navbar() {
           <Link className="hover-white-border" to="/">
             <div className=" cart-container">
               <div className=" cart-count-container">
-                <span className="cart-count">2</span>
+                <span className="cart-count">0</span>
                 <span className="cartIcon-container">
                   <img className="cartIcon" src={cartIcon} alt="cart" />
                 </span>

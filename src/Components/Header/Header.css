@@ -48,7 +48,7 @@
   background-color: #232f3e;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 10;
   padding: 0.7rem;
 }
 
