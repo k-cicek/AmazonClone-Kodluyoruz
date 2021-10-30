@@ -1,7 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import Header from "./Components/Header";
-import Navbar from "./Components/Navbar";
+import Home from "./Pages/Home";
 
 function Routes() {
   return (
@@ -9,8 +8,7 @@ function Routes() {
       <Router>
         <Switch>
           <Route path="/">
-            <Navbar />
-            <Header />
+            <Home></Home>
           </Route>
         </Switch>
       </Router>
