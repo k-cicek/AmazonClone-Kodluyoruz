@@ -1,0 +1,30 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+  height: 22rem;
+  background-color: white;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-header {
+  display: flex;
+  flex: 1;
+  background-color: blue;
+  align-items: center;
+}
+.card-image {
+  display: flex;
+  flex: 5;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+  margin: 1rem;
+}
+.card-footer {
+  display: flex;
+  flex: 1;
+  background-color: blue;
+  align-items: center;
+}

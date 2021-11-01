@@ -1,0 +1,9 @@
+.text-box-container {
+  z-index: 1;
+  padding: 1rem;
+  background-color: #f5f6f6;
+}
+.text-box-container > span {
+  font-size: 0.9em;
+  font-weight: 300;
+}

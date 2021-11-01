@@ -1,0 +1,34 @@
+#products-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  flex: 1;
+}
+#products-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  background-color: tomato;
+}
+
+.top-sidebar {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+.bottom-sidebar {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+}
+#product-listing {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+
+.listing-triple-products {
+}

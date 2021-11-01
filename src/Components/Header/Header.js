@@ -5,7 +5,7 @@ function Header() {
   return (
     <div id="nav-header">
       <div className="nav-left">
-        <a className="nav-hamburger-menu hover-white-border">
+        <a href="/" className="nav-hamburger-menu hover-white-border">
           <img className="hamburger-menu" src={hamburgerMenu} alt="cart" />
 
           <div className="menu-line">All</div>

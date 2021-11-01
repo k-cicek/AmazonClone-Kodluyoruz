@@ -72,11 +72,7 @@ function Navbar() {
         </div>
         <div className="nav-right">
           <div className=" language-container">Flag</div>
-          <div
-            className=" signIn-container "
-            onMouseOver="show()"
-            onMouseOut="hide()"
-          >
+          <div className=" signIn-container ">
             <Link className="hover-white-border" to="/login">
               <div className="lines-style ">
                 <span className="first-line">Hello, Sign in</span>

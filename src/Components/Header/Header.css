@@ -37,17 +37,12 @@
 /* Navbar */
 
 #nav-header {
-  position: absolute;
-  top: 100px;
-  left: 0;
   min-width: 1000px;
   height: 2.6rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: #232f3e;
-  position: sticky;
-  top: 0;
   z-index: 10;
   padding: 0.7rem;
 }

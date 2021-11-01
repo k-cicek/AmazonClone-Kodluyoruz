@@ -1,14 +1,46 @@
 import React from "react";
-import Navbar from "../../Components/Navbar";
-import Header from "../../Components/Header";
-import LoginDropdown from "../../Components/Navbar/components/LoginDropdown";
+import "./Home.css";
+// Components
+import BannerSlider from "./components/BannerSlider";
+import SingleCard from "./components/SingleCard";
+import QuartetImage from "./components/QuartetImage";
+import Slider from "./components/Slider";
+// Datas
+import { sliderImagesList } from "./components/BannerSlider/sliderData";
+import { topSellers } from "./components/Slider/itemList";
 
 function Home() {
   return (
-    <div>
-      <Navbar />
-      <LoginDropdown className="login-sub-nav" />
-      <Header />
+    <div className="home-container">
+      <div className="top-side">
+        <BannerSlider className="slider" slides={sliderImagesList} />
+      </div>
+      <div className="bottom-side">
+        <section className="card-section">
+          <SingleCard />
+          <QuartetImage />
+          <SingleCard />
+          <QuartetImage />
+          <SingleCard />
+          <SingleCard />
+          <SingleCard />
+          <SingleCard />
+          <Slider className="slider" slides={topSellers} />
+          <QuartetImage />
+          <QuartetImage />
+          <SingleCard />
+          <SingleCard />
+          <Slider className="slider" slides={topSellers} />
+          <Slider className="slider" slides={topSellers} />
+          <QuartetImage />
+          <SingleCard />
+          <SingleCard />
+          <QuartetImage />
+          <QuartetImage />
+          <SingleCard />
+          <Slider className="slider" slides={topSellers} />
+        </section>
+      </div>
     </div>
   );
 }

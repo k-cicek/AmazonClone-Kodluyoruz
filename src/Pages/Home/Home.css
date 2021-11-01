@@ -1,0 +1,27 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.slider {
+  display: flex;
+  flex: 1;
+}
+.top-side {
+  display: flex;
+  flex: 1;
+}
+.bottom-side {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  z-index: 1;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
