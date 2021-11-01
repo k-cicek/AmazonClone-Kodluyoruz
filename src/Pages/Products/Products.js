@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Products.css";
-import ProductComponent from "./ProductComponent";
-import ProductDetail from "./Components/ProductDetail";
 
 function Products() {
   return (
@@ -62,6 +60,7 @@ function Products() {
                     alt="duracel"
                   />
                 </div>
+                <div></div>
               </Link>
             </div>
             <div>
