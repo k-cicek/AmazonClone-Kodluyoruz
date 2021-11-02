@@ -15,14 +15,19 @@
   text-indent: 1rem;
   font-size: 0.8em !important;
   line-height: 1.2em !important;
+  padding-top: 1rem;
 }
 .card-image {
   display: flex;
+
   flex: 5;
   align-items: center;
   justify-content: center;
-  background-color: yellow;
-  margin: 1rem;
+}
+
+.card-image img {
+  width: 100%;
+  object-fit: fill;
 }
 .card-footer {
   display: flex;
