@@ -29,15 +29,14 @@ function SignIn({ loginUser, errorSetting }) {
 
     try {
       if (password && email) {
-        let ok = await login(email.trim(), password);
-        history.push("/home");
+        await login(email.trim(), password);
+        history.push("/");
         return;
       } else {
         alert("Enter your password");
       }
     } catch {
       alert("Please check your email or password!");
-
     }
   };
 
