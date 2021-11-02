@@ -1,8 +1,10 @@
 export const homeSingleCategories = [
   {
     id: 1,
-    value: "AmazonBasics",
+    value: "Amazon Basics",
     url: "https://www.amazon.com/gp/css/homepage.html?ref_=nav_AccountFlyout_ya",
+    image:
+      "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg",
   },
   {
     id: 2,
@@ -13,6 +15,8 @@ export const homeSingleCategories = [
     id: 3,
     value: "Electronics",
     url: "https://www.amazon.com/gp/yourstore?ref_=nav_AccountFlyout_recs",
+    image:
+      "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg",
   },
   {
     id: 4,

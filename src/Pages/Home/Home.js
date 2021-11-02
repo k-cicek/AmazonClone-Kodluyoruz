@@ -9,7 +9,7 @@ import Slider from "./components/Slider";
 // Datas
 import { sliderImagesList } from "./components/BannerSlider/sliderData";
 import { topSellers } from "./components/Slider/itemList";
-
+import { homeSingleCategories } from "./assets/homeData";
 function Home() {
   return (
     <div className="home-container">
@@ -19,9 +19,17 @@ function Home() {
       <TextBox className="text-box-container" />
       <div className="bottom-side">
         <section className="card-section">
-          <SingleCard />
+          <SingleCard
+            src={homeSingleCategories[0].image}
+            alt={homeSingleCategories[0].value}
+            text={homeSingleCategories[0].value}
+          />
           <QuartetImage />
-          <SingleCard />
+          <SingleCard
+            src={homeSingleCategories[2].image}
+            alt={homeSingleCategories[2].value}
+            text={homeSingleCategories[2].value}
+          />
           <QuartetImage />
           <SingleCard />
           <SingleCard />
