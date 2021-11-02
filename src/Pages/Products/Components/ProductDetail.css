@@ -1,0 +1,97 @@
+#product-detail-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 1rem;
+}
+
+/* ----------------Header ----------------------: Product name*/
+#product-detail-container header {
+  display: flex;
+  flex: 1;
+}
+
+/* -----------------Second Header ---------------: Product path */
+#product-detail-container .product-path {
+  display: flex;
+  flex: 1;
+}
+
+/* -----------------Center -----------------------: Photos + Detail + Cart*/
+#product-feature-container {
+  display: flex;
+  flex-direction: row;
+  flex: 10;
+}
+/* ----- Left Column ----- */
+.product-left-col {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+}
+
+.product-photos {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+.product-leftside-photos {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.small-photo {
+  width: 3rem;
+  height: 3rem;
+  background-color: blue;
+  margin-bottom: 0.3rem;
+}
+
+.product-main-photo {
+  display: flex;
+  flex: 4;
+}
+.main-photo {
+  width: 25rem;
+  height: 23rem;
+  background-color: yellow;
+}
+
+/* ----- Middle Column ----- */
+
+.product-middle-col {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+.product-middle-col .product-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-middle-col .product-name {
+  display: flex;
+  text-align: start;
+}
+
+/* ----- Right Column ----- */
+
+.product-right-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.product-right-col .product-main-detail {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* ---------------- Comments -----------------------*/
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}

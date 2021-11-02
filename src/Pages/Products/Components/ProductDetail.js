@@ -2,19 +2,34 @@ import React from "react";
 import "./ProductDetail.css";
 const ProductDetail = () => {
   return (
-    <div>
+    <div id="product-detail-container">
       <header className="advertisement">
         <span>International Kindler Paperwhite</span>
         <span>Buy Now ▸ </span>
       </header>
-      <center className="product-details">
-        <section className="product-photos">
-          <div className="product-leftside-photos"></div>
-          <div className="product-main-photo"></div>
+      <div className="product-path">
+        <span>
+          Health & Household›Household Supplies›Household Batteries›AA
+        </span>
+      </div>
+      <section id="product-feature-container">
+        <section className="product-left-col">
+          <div className="product-leftside-photos">
+            <div className="small-photo"> small box</div>
+            <div className="small-photo"> small box</div>
+            <div className="small-photo"> small box</div>
+            <div className="small-photo"> small box</div>
+          </div>
+          <div className="product-main-photo">
+            <div className="main-photo"> big box</div>
+          </div>
         </section>
-        <section className="product-detail-container">
+        <section className="product-middle-col">
           <div className="product-detail">
-            <div className="product-name"></div>
+            <div className="product-name">
+              Amazon Basics 48 Pack AA High-Performance Alkaline Batteries,
+              10-Year Shelf Life, Easy to Open Value Pack
+            </div>
             <div className="product-store"></div>
             <div className="product-raiting"></div>
           </div>
@@ -33,12 +48,8 @@ const ProductDetail = () => {
               </table>
             </div>
             <div className="product-estimated-total-cost">
-              <span>
-                <b>Estimated Total cost: $48.29</b> including Shipping & Import
-                Fees Deposit to Turkey
-              </span>
-              <span>Free Deposit to Turkey</span>
-              <span>Details</span>
+              <span>$33.30 Shipping & Import Fees Deposit to Turkey</span>
+              <span>Details</span> <span>˅</span>
             </div>
             <div className="product-raiting"></div>
           </div>
@@ -49,13 +60,13 @@ const ProductDetail = () => {
             </span>
           </div>
         </section>
-        <section className="product-detail-container">
-          <div className="product-main-detail"></div>
+        <section className="product-right-col">
+          <div className="product-price-table"></div>
           <div className="product-store"></div>
           <div className="product-main-photo"></div>
         </section>
-      </center>
-      <footer className="comments"></footer>
+      </section>
+      <section className="comments"></section>
     </div>
   );
 };
