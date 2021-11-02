@@ -17,15 +17,18 @@ function Login({ loginUser, errorSetting }) {
     try {
       if (email) {
         alert("success");
+        localStorage.setItem("email", email);
         history.push("/signIn");
-      } else;
+      } else {
+        alert("Enter your mail!");
+      }
     } catch {
-      alert("yan");
+      alert("");
     }
   };
 
   useEffect(() => {
-    localStorage.setItem("email", email);
+    localStorage.getItem("email", email);
   });
 
   /********  Dropdown Button ********/
