@@ -24,14 +24,20 @@ function SignIn({ loginUser, errorSetting }) {
 
   console.log(email);
 
-  const signIn = (e) => {
+  const signIn = async (e) => {
     e.preventDefault();
 
-    if (password && email) {
-      login(email.trim(), password);
-      history.push("/login");
-    } else {
-      console.log("sas");
+    try {
+      if (password && email) {
+        let ok = await login(email.trim(), password);
+        history.push("/home");
+        return;
+      } else {
+        alert("Enter your password");
+      }
+    } catch {
+      alert("Please check your email or password!");
+
     }
   };
 
