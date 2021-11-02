@@ -6,6 +6,7 @@ import TextBox from "./components/TextBox";
 import SingleCard from "./components/SingleCard";
 import QuartetImage from "./components/QuartetImage";
 import Slider from "./components/Slider";
+import Footer from "../../Components/Footer";
 // Datas
 import { sliderImagesList } from "./components/BannerSlider/sliderData";
 import { topSellers } from "./components/Slider/itemList";
@@ -49,6 +50,7 @@ function Home() {
           <QuartetImage />
           <SingleCard />
           <Slider className="slider" slides={topSellers} />
+          <Footer />
         </section>
       </div>
     </div>

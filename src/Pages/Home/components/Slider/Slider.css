@@ -44,7 +44,6 @@
   text-align: center;
   opacity: 0.5;
   cursor: pointer;
-  z-index: 10;
 }
 
 #slider-card-container .left-arrow {
@@ -60,7 +59,6 @@
   text-align: center;
   cursor: pointer;
   opacity: 0.5;
-  z-index: 10;
 }
 #slider-card-container .left-arrow:focus,
 #slider-card-container .right-arrow:focus {

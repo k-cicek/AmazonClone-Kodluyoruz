@@ -25,7 +25,6 @@ function Routes() {
               <LoginDropdown className="login-sub-nav" />
               <Header />
               <Home />
-              <Footer />
             </Route>
             <Route exact path="/products">
               <Navbar />
