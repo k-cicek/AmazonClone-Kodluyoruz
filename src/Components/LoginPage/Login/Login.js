@@ -2,14 +2,34 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
 import downButton from "./downButton.svg";
+import { useAuth } from "../../../Context/AuthContext";
+import { useHistory } from "react-router-dom";
+import { useEffect } from "react";
 
-function Login() {
+/********  Login ********/
+function Login({ loginUser, errorSetting }) {
   const [email, setEmail] = useState("");
+  const history = useHistory();
 
-  const signIn = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    // Sign up code here.
+
+    try {
+      if (email) {
+        alert("success");
+        history.push("/signIn");
+      } else;
+    } catch {
+      alert("yan");
+    }
   };
 
+  useEffect(() => {
+    localStorage.setItem("email", email);
+  });
+
+  /********  Dropdown Button ********/
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -20,7 +40,6 @@ function Login() {
     setIsOpen(false);
     console.log(selectedOption);
   };
-
 
   return (
     <div className="login">
@@ -33,18 +52,19 @@ function Login() {
       </Link>
       <div className="login_container">
         <h1>Sign-In</h1>
-        <form>
+        <form onSubmit={handleSubmit}>
           <h5>Email or mobile phone number</h5>
           <input
             type="text"
+            name="email"
+            placeholder=""
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <Link>
-            <button type="submit" onClick={signIn} className="login_signIn">
-              Continue
-            </button>
-          </Link>
+
+          <button type="submit" className="login_signIn">
+            Continue
+          </button>
         </form>
         <p>
           By continuing, you agree to Amazon's{" "}
@@ -57,13 +77,13 @@ function Login() {
           </a>
         </p>
         <div className="dropdown_container">
-          <img src={downButton} alt="" className={`icon ${isOpen && "open"}`}/>
+          <img src={downButton} alt="" className={`icon ${isOpen && "open"}`} />
 
           <span className="dropdown_button" onClick={toggling}>
             {selectedOption || "Need help?"}
           </span>
           {isOpen && (
-            <div className="dropdown" >
+            <div className="dropdown">
               <div className="dropdown_link" onClick={onOptionClicked}>
                 <span>
                   <Link to="/forgotPassword">Forgot your password?</Link>

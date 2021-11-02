@@ -39,6 +39,7 @@ body {
 .dropdown_link span {
   margin-top: 7px;
   margin-bottom: 2px;
+  margin-left: 16px;
 }
 
 .dropdown_link a {
@@ -102,6 +103,17 @@ body {
   border-radius: 5px;
   border: 1px solid lightgray;
   padding: 20px;
+}
+
+.dropdown_container .icon {
+margin-right: 8px;
+margin-bottom: 2px;
+transform: rotate(-90deg);
+
+}
+
+.dropdown_container .icon.open {
+  transform: rotate(360deg);
 }
 
 .login_container > h1 {

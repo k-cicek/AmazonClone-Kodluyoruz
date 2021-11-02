@@ -168,28 +168,27 @@ body {
  font-weight: 500;
 }
 
+.signIn_checkbox .icon{
+  margin-top: -19px;
+ }
+
 .signIn_checkbox > label > input {
   vertical-align: middle;
   margin-bottom: 5px;
   
 }
 
+
 .signIn_button {
   border: none;
   background-color: white;
   color: #0066c0;
+  
 }
 
 .signIn_button > h5 {
-margin-top: 2px;
-
-}
-
-.icon {
-  background-image: url("data:image/svg+xml;utf8,<svg fill='rgb(61, 61, 61)' height='24' viewBox='0 0 24 24' width='45px' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-  background-position-y: 50%;
+ margin-top: 2px;
+  
 }
 
 .signIn_button > h5:hover {
@@ -197,6 +196,8 @@ margin-top: 2px;
   color: #c35500;
   cursor: pointer;
 }
+
+
 
 
 

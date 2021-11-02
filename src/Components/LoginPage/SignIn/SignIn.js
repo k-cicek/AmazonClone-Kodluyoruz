@@ -2,14 +2,40 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Modal from "../LoginModal/LoginModal";
 import "./SignIn.css";
+import downButton from "../Login/downButton.svg";
+import { useEffect } from "react";
+import { useAuth } from "../../../Context/AuthContext";
+import { useHistory } from "react-router-dom";
 
-function SignIn() {
+function SignIn({ loginUser, errorSetting }) {
   const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
+  const { login } = useAuth();
+  const history = useHistory();
 
-  const signIn = (e) => {
+  useEffect(() => {
+    const email = localStorage.getItem("email");
+    setEmail(email);
+  }, []);
+
+  const handleSubmit = (e) => {
     e.preventDefault();
   };
 
+  console.log(email);
+
+  const signIn = (e) => {
+    e.preventDefault();
+
+    if (password && email) {
+      login(email.trim(), password);
+      history.push("/login");
+    } else {
+      console.log("sas");
+    }
+  };
+
+  // ********* Modal *************** //
   const [show, setShow] = useState(false);
   const openModal = () => {
     setShow(true);
@@ -25,7 +51,7 @@ function SignIn() {
       </Link>
       <div className="signIn_container">
         <h1>Sign-In</h1>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="signIn_text">
             <h5>Password</h5>
             <p>
@@ -35,27 +61,24 @@ function SignIn() {
 
           <input
             type="password"
+            placeholder=""
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Link>
-            <button type="submit" onClick={signIn} className="signIn_signIn">
-              Sign In
-            </button>
-          </Link>
+
+          <button type="submit" onClick={signIn} className="signIn_signIn">
+            Sign In
+          </button>
         </form>
         <div className="signIn_checkbox">
-      <label>
-        <input type="checkbox"/>
-        Keep me signed in.
-      </label>
-      <button
-            type="button"
-            className="signIn_button"
-            onClick={openModal}
-          >
-           <h5>Details</h5>
+          <label>
+            <input type="checkbox" />
+            Keep me signed in.
+          </label>
+          <button type="button" className="signIn_button" onClick={openModal}>
+            <h5>Details</h5>
           </button>
+          <img src={downButton} alt="" className="icon" />
           {show === true ? (
             <Modal
               show={show}
@@ -65,13 +88,11 @@ function SignIn() {
           ) : (
             ""
           )}
-    </div>
+        </div>
       </div>
 
-     
-
       <hr className="line" />
-      <div class="footer">
+      <div className="footer">
         <p>
           <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088">
             Conditions of Use
