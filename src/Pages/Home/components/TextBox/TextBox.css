@@ -6,4 +6,6 @@
 .text-box-container > span {
   font-size: 0.9em;
   font-weight: 300;
+  display: flex;
+  justify-content: center;
 }

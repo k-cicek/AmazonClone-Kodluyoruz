@@ -33,36 +33,38 @@
 
 #slider-card-container .right-arrow {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 5rem;
-  height: 15rem;
+  top: 30%;
+  right: 2%;
+  width: 1.2em;
+  height: 2em;
+  line-height: 100px;
   font-size: 3rem;
+  box-shadow: 0 1px 3px #888;
   color: rgb(70, 69, 69);
-  z-index: 10;
+  text-align: center;
+  opacity: 0.5;
   cursor: pointer;
-  user-select: none;
-  background-color: transparent;
-  border: none;
+  z-index: 10;
 }
 
 #slider-card-container .left-arrow {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 5rem;
-  height: 15rem;
+  top: 30%;
+  left: 2%;
+  width: 1.2em;
+  height: 2em;
+  line-height: 100px;
   font-size: 3rem;
+  box-shadow: 0 1px 3px #888;
   color: rgb(70, 69, 69);
-  z-index: 10;
+  text-align: center;
   cursor: pointer;
-  user-select: none;
-  background-color: transparent;
-  border: none;
+  opacity: 0.5;
+  z-index: 10;
 }
-.left-arrow:focus,
-.right-arrow:focus {
-  box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 4px #008296;
+#slider-card-container .left-arrow:focus,
+#slider-card-container .right-arrow:focus {
+  outline: 5px auto #008296;
 }
 .slide {
   opacity: 16;

@@ -5,10 +5,11 @@
   flex: 1;
 }
 
-.image {
+.slider-image {
   width: 100%;
-  background-size: cover;
+  background-size: fill;
   background-image: linear-gradient(to top bottom);
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 60%);
 }
 
 .right-arrow {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./SingleCard.css";
 import { homeSingleCategories } from "../../assets/homeData";
+import "./SingleCard.css";
 
 const SingleCard = () => {
   return (

@@ -11,8 +11,10 @@
 .card-header {
   display: flex;
   flex: 1;
-  background-color: blue;
   align-items: center;
+  text-indent: 1rem;
+  font-size: 0.8em !important;
+  line-height: 1.2em !important;
 }
 .card-image {
   display: flex;
@@ -25,6 +27,17 @@
 .card-footer {
   display: flex;
   flex: 1;
-  background-color: blue;
   align-items: center;
+}
+.card-footer a {
+  color: #007185;
+  font-size: 13px !important;
+  line-height: 19px !important;
+  text-indent: 1rem;
+  text-decoration: none;
+}
+.card-footer:hover a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #c7511f;
 }

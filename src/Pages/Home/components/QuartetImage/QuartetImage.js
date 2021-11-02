@@ -1,6 +1,7 @@
 import React from "react";
-import "./QuartetImage.css";
+import { Link } from "react-router-dom";
 import { quatretCategories } from "../../assets/homeData";
+import "./QuartetImage.css";
 const QuartetImage = () => {
   return (
     <div className="card-container">
@@ -35,7 +36,9 @@ const QuartetImage = () => {
       </div>
 
       <div className="card-footer">
-        <span>See more</span>
+        <Link to="/products">
+          <span>See more</span>
+        </Link>
       </div>
     </div>
   );

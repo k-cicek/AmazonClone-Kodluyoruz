@@ -4,13 +4,13 @@
   flex: 5;
   align-items: center;
   justify-content: center;
-  background-color: yellow;
   margin: 1rem;
   flex-wrap: wrap;
 }
 #quartet-image-container .single-container {
   display: flex;
-  background-color: tomato;
+  justify-content: center;
+  background-color: rgba(0, 164, 180, 0.05);
   width: 50%;
   height: 50%;
 }
@@ -22,6 +22,9 @@
 
 #quartet-image-container a .text {
   flex: 1;
+  font-size: 13px !important;
+  line-height: 19px !important;
+  justify-content: center;
 }
 #quartet-image-container a .image {
   flex: 4;

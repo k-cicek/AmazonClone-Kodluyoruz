@@ -31,7 +31,7 @@ const BannerSlider = ({ slides }) => {
             key={index}
           >
             {index === current && (
-              <img src={slide.image} alt={slide.alt} className="image" />
+              <img src={slide.image} alt={slide.alt} className="slider-image" />
             )}
           </div>
         );

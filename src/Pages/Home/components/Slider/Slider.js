@@ -31,11 +31,12 @@ const Slider = ({ slides }) => {
       <div id="slider-container">
         {topSellers.map((slide, index) => {
           return (
-            <div
-              className={index === current ? "slide active" : "slide"}
-              key={index}
-            >
-              {index === current && <img src={slide.image} className="image" />}
+            <div key={index}>
+              <div className={index === current ? "slide active" : "slide"}>
+                {index === current && (
+                  <img src={slide.image} className="image" />
+                )}
+              </div>
             </div>
           );
         })}

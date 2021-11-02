@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 // Components
 import BannerSlider from "./components/BannerSlider";
+import TextBox from "./components/TextBox";
 import SingleCard from "./components/SingleCard";
 import QuartetImage from "./components/QuartetImage";
 import Slider from "./components/Slider";
@@ -13,8 +14,9 @@ function Home() {
   return (
     <div className="home-container">
       <div className="top-side">
-        <BannerSlider className="slider" slides={sliderImagesList} />
+        <BannerSlider className="home-slider" slides={sliderImagesList} />
       </div>
+      <TextBox className="text-box-container" />
       <div className="bottom-side">
         <section className="card-section">
           <SingleCard />
