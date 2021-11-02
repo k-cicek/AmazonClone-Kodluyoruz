@@ -1,0 +1,74 @@
+.footer__line{
+ background-color:#131921;
+ max-width: 100%;
+ margin: 0;
+ padding: 10px 0 30px 0;
+ justify-content: center;
+ align-items: center;
+ bottom:0;
+ color: #999;
+ font-size: 10px;
+ display: flex;
+ height: 40px;
+ text-align: center !important;
+ 
+}
+
+.footer__line > a {
+ text-decoration: none;
+}
+
+.footer__lineRow1 {
+ text-align: center !important;
+}
+.footer__lineRow1 > a { 
+ position: relative;
+ display: inline-block;
+ font-size: 12px;
+ font-weight: 800;
+ color: #fff;
+ overflow: hidden;
+ background: #ddd;
+ background-clip: text;
+ background-size: 200% 100%;
+ background-position: 100%;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+
+.footer__lineRow1 > a:hover {
+ background-position: 0 100%;
+ text-decoration: underline #fff;
+}
+
+.footer__lineRow2 {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.footer__lineText1 {
+ font-size: 12px;
+ font-weight: 600;
+ cursor: pointer;
+ color: #999;
+}
+
+.footer__lineText2 {
+ font-size: 12px;
+ font-weight: 700;
+ line-height: 5;
+ color: white;
+}
+
+.footer__span {
+ display: inline-block;
+ width: 20px;
+}
+
+.git__logo {
+ height: 24px;
+ width: 24px;
+ cursor: help;
+ filter: invert(100%);
+}

@@ -1,0 +1,16 @@
+.scrollTop {
+  background-color: #485769;
+  height: 40px;
+}
+
+.scrollTop span {
+  display: block;
+  color: white;
+  padding: 12px 0;
+  line-height: 15px;
+  font-size: 15px;
+}
+
+.scrollTop span:hover {
+ cursor: pointer;
+}
