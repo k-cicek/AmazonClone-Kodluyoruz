@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Register.css";
+import { useAuth } from "../../../Context/AuthContext";
+import { useHistory } from "react-router-dom";
 
 function Register() {
+  const { signup } = useAuth();
+  const history = useHistory();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [reEnterPassword, SetreEnterPassword] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // Sign up code here.
+    try {
+      if (password === reEnterPassword) {
+        await signup(email, password);
+        history.push("/login");
+      } else {
+        alert("password yanlış");
+      }
+    } catch {
+      alert("maili tekrar giriniz");
+    }
+  };
+
   return (
     <div className="register">
       <Link to="/">
@@ -14,20 +38,39 @@ function Register() {
       </Link>
       <div className="register_container">
         <h1>Create account</h1>
-        <form>
+        <form onSubmit={handleSubmit}>
           <h5>Your name</h5>
-          <input type="name" />
+          <input
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            type="name"
+            required
+          />
           <h5>Email </h5>
-          <input type="email" />
+          <input
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            type="email"
+            required
+          />
           <h5>Password </h5>
-          <input type="password" />
+          <input
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            type="password"
+            required
+          />
           <h5>Re-enter password </h5>
-          <input type="Re-enter password" />
-          <Link>
-            <button type="submit" className="register_signIn">
-              Create your Amazon account
-            </button>
-          </Link>
+          <input
+            value={reEnterPassword}
+            onChange={(e) => SetreEnterPassword(e.target.value)}
+            type="Re-enter password"
+            required
+          />
+
+          <button type="submit" className="register_signIn">
+            Create your Amazon account
+          </button>
         </form>
         <p>
           By continuing, you agree to Amazon's{" "}
@@ -40,22 +83,20 @@ function Register() {
           </a>
         </p>
 
-        <div className="register_divider">  
-        <p>
-          Already have an account?{" "}
-          <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=508088">
-            Conditions of Use
-          </a>{" "}
-        </p>
-        <p>
-          Buying for work?{" "}
-          <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&nodeId=468496">
-            Privacy Notice.
-          </a>
-        </p>
+        <div className="register_divider">
+          <p>
+            Already have an account?{" "}
+            <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_condition_of_use?ie=UTF8&nodeId=508088">
+              Conditions of Use
+            </a>{" "}
+          </p>
+          <p>
+            Buying for work?{" "}
+            <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_signin_notification_privacy_notice?ie=UTF8&nodeId=468496">
+              Privacy Notice.
+            </a>
+          </p>
         </div>
-
-        
       </div>
 
       <hr className="line" />
