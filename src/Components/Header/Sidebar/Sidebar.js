@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { SidebarData } from "../Sidebar/SidebarData";
-function Sidebar({ ...props }) {
+function Sidebar() {
   return (
     <nav id="sidebar">
       <li className="navbar-toggle">
@@ -9,25 +9,22 @@ function Sidebar({ ...props }) {
           x
         </Link>
       </li>
-      <li>
-        <div className="sidebar-header">
-          {SidebarData.map((item, index) => {
-            return (
-              <>
-                <li key={index} className={item.cName}>
-                  {item.title}
-                </li>
-                <li className={item.cName}>
-                  <Link to={item.path}>
-                    <div>{item.content.header}</div>{" "}
-                    <div content={item.content.header}> </div>
-                  </Link>
-                </li>
-              </>
-            );
-          })}
-        </div>
-      </li>
+      <div className="sidebar-header">
+        {SidebarData.map((item, index) => {
+          return (
+            <li item={item} key={index} className={item.cName}>
+              {item.title}
+            </li>
+          );
+        })}
+      </div>
+      {/*
+        couldn't figure out this thing!!!! {[]} how can I get the data inside
+      object/array??
+      {SidebarData.content ||
+        [].map((item, index) => {
+          return <li key={index}>{item.content.header}</li>;
+        })} */}
     </nav>
   );
 }
