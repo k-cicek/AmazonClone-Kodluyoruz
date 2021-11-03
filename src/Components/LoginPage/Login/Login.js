@@ -16,12 +16,8 @@ function Login({ loginUser, errorSetting }) {
 
     try {
       if (email) {
-        alert("success");
         localStorage.setItem("email", email);
-<<<<<<< Updated upstream
         alert("Successful");
-=======
->>>>>>> Stashed changes
         history.push("/signIn");
       } else {
         alert("Enter your mail!");

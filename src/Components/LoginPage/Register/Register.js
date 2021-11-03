@@ -41,6 +41,8 @@ function Register() {
         <form onSubmit={handleSubmit}>
           <h5>Your name</h5>
           <input
+            id="name"
+            name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             type="name"
@@ -48,6 +50,8 @@ function Register() {
           />
           <h5>Email </h5>
           <input
+            id="email"
+            name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type="email"
@@ -55,6 +59,8 @@ function Register() {
           />
           <h5>Password </h5>
           <input
+            id="password"
+            name="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             type="password"

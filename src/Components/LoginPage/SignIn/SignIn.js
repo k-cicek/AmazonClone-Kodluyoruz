@@ -30,7 +30,7 @@ function SignIn({ loginUser, errorSetting }) {
     try {
       if (password && email) {
         let ok = await login(email.trim(), password);
-        history.push("/home");
+        history.push("/");
         return;
       } else {
         alert("sifreyi tekrar giriniz");

@@ -69,7 +69,7 @@ body {
 
 
 .register_container {
-  width: 300px;
+  width: 350px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -92,6 +92,8 @@ body {
   font-weight: 700;
   margin-bottom: 5px;
   text-align: left;
+  margin-top: 10px;
+  margin-left: 3px;
 }
 
 .register_container > form > input {
