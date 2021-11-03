@@ -8,6 +8,8 @@ import {
   searchIcon,
 } from "./assets/img/index";
 import { categoriesList } from "./assets/navbarData";
+import LoginDropdown from "./components/LoginDropdown";
+import LanguageDropdown from "./components/LanguageDropdown";
 function Navbar() {
   // ************** auto resizing the select tag for searchbar ************************
   const [value, setValue] = useState("All");
@@ -71,14 +73,19 @@ function Navbar() {
           </form>
         </div>
         <div className="nav-right">
-          <div className=" language-container">Flag</div>
+          <Link className="hover-white-border" to="/returns">
+            <div className="language-container">
+              <LanguageDropdown />
+            </div>
+
+            <div className="second-line flexity">▾</div>
+          </Link>
           <div className=" signIn-container ">
+            <LoginDropdown />
             <Link className="hover-white-border" to="/login">
               <div className="lines-style ">
                 <span className="first-line">Hello, Sign in</span>
-                <span className="second-line arrow-bottom">
-                  Accounts & Lists
-                </span>
+                <span className="second-line ">Accounts & Lists ▾</span>
               </div>
             </Link>
           </div>

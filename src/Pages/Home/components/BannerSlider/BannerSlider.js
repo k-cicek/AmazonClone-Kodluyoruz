@@ -17,7 +17,7 @@ const BannerSlider = ({ slides }) => {
     return null;
   }
   return (
-    <section className="slider">
+    <section className="slider ">
       <button className="left-arrow" onClick={prevSlide}>
         ＜
       </button>
@@ -27,8 +27,8 @@ const BannerSlider = ({ slides }) => {
       {sliderImagesList.map((slide, index) => {
         return (
           <div
-            className={index === current ? "slide active" : "slide"}
             key={index}
+            className={index === current ? "slide active" : "slide"}
           >
             {index === current && (
               <img src={slide.image} alt={slide.alt} className="slider-image" />

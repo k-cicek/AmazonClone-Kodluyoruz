@@ -58,6 +58,28 @@ export const yourLists = [
     url: "https://www.amazon.com/gp/clpf?ref_=nav_ListFlyout_smi_se_ya_lll_ll",
   },
 ];
+export const languageList = [
+  {
+    id: 1,
+    value: "Español - ES",
+    url: "https://www.amazon.com/hz/wishlist/intro",
+  },
+  {
+    id: 2,
+    value: "简体中文 - ZH",
+    url: "https://www.amazon.com/registries?ref_=nav_ListFlyout_find",
+  },
+  {
+    id: 3,
+    value: "Português - PT",
+    url: "https://www.amazon.com/gp/clpf?ref_=nav_ListFlyout_smi_se_ya_lll_ll",
+  },
+  {
+    id: 4,
+    value: "한국어 - KO",
+    url: "https://www.amazon.com/gp/clpf?ref_=nav_ListFlyout_smi_se_ya_lll_ll",
+  },
+];
 export const accountList = [
   {
     id: 1,

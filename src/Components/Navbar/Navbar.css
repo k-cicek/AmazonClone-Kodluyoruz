@@ -32,11 +32,19 @@
   background-position-y: 50%;
 }
 
+.white {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='45px' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") !important;
+}
+.flexity {
+  display: flex;
+  align-items: center;
+}
 /* Hover */
 .hover-white-border {
   display: flex;
   padding: 8px;
   border: 1px solid transparent;
+  text-decoration: none;
 }
 .hover-white-border:hover {
   border: 1px solid;
@@ -69,12 +77,13 @@
   display: flex;
   align-items: center;
   margin-left: 0.5rem;
-  flex: 7;
+  flex: 4;
 }
 
 .nav-right {
   display: flex;
   align-items: center;
+  padding-left: 0.1rem;
 }
 /* Logo */
 .logo-container {
@@ -142,9 +151,9 @@
 }
 .categories option {
   display: flex;
-  background-color: #ffffff;
+  align-items: center;
+  background-color: white;
 }
-
 .nav-searchbar-form input:focus {
   outline: none;
 }
@@ -188,7 +197,7 @@
   flex: 1;
 }
 .searchIcon-container:hover {
-  filter: brightness(92%);
+  filter: brightness(100%);
   cursor: pointer;
 }
 .search-icon {
@@ -198,11 +207,24 @@
 /* Language */
 .language-container {
   display: flex;
+  background-image: url("https://flagicons.lipis.dev/flags/4x3/us.svg");
+  background-repeat: no-repeat;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0.1rem;
+}
+.language-container:hover .language-dropdown-container {
+  visibility: visible;
+  opacity: 10;
 }
 /* Sign In */
 .signIn-container {
   display: flex;
   margin-right: 1rem;
+}
+.signIn-container:hover .login-dropdown-container {
+  visibility: visible;
+  opacity: 10;
 }
 
 /* Returns & Orders */

@@ -22,8 +22,9 @@
 /* Hover */
 .hover-white-border {
   display: flex;
-  padding: 6px;
+  padding: 0.5rem;
   border: 1px solid transparent;
+  margin-left: 0.3rem;
 }
 .hover-white-border:hover {
   border: 1px solid;

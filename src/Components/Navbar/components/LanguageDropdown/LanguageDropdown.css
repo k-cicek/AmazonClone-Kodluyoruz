@@ -1,25 +1,26 @@
-.login-dropdown-container {
+.language-dropdown-container {
   display: flex;
+  flex-direction: column;
   position: relative;
-  width: 31rem;
-  height: 22rem;
+  width: 15rem;
+  height: 30rem;
   position: fixed;
   top: 53px;
-  right: 60px;
-  flex-direction: column;
+  right: 14rem;
   background-color: white;
   border: 1px solid grey;
-  z-index: 101;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 2s;
+  transition: visibility 5s;
+  z-index: 101;
+  padding: 1rem;
 }
 
-.login-dropdown-container::after {
+.language-dropdown-container::after {
   content: "";
   position: absolute;
   bottom: 100%;
-  left: 61%;
+  left: 23%;
   border: 0.6rem solid;
   border-color: transparent transparent white transparent;
 }

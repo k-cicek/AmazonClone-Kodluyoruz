@@ -1,21 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./LoginDropdown.css";
 import { yourLists, accountList } from "../../assets/navbarData";
-export default function LoginDropdown() {
-  const signIn = (e) => {
-    e.preventDefault();
-  };
+//import { useAuth } from "../../../../Context/AuthContext";
+import { Link } from "react-router-dom";
 
+export default function LoginDropdown() {
   return (
-    <div className="container">
+    <div className="login-dropdown-container">
       <div className="dropdown-header">
-        <button
-          type="submit"
-          onClick={signIn}
-          className="dropdown-login-button"
-        >
+        <Link to="/login" type="submit" className="dropdown-login-button">
           Sign In
-        </button>
+        </Link>
         <div className="header-text">
           <span>New customer?</span>
           <span>
