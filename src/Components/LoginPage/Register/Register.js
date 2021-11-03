@@ -99,8 +99,8 @@ function Register() {
         </div>
       </div>
 
-      <hr className="line" />
-      <div class="footer">
+      <hr className="registerLine" />
+      <div class="registerFooter">
         <p>
           <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088">
             Conditions of Use

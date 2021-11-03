@@ -18,6 +18,10 @@ function Login({ loginUser, errorSetting }) {
       if (email) {
         alert("success");
         localStorage.setItem("email", email);
+<<<<<<< Updated upstream
+        alert("Successful");
+=======
+>>>>>>> Stashed changes
         history.push("/signIn");
       } else {
         alert("Enter your mail!");
@@ -105,8 +109,8 @@ function Login({ loginUser, errorSetting }) {
         <button className="login_register">Create your Amazon account</button>
       </Link>
 
-      <hr className="line" />
-      <div class="footer">
+      <hr className="loginLine" />
+      <div class="loginFooter">
         <p>
           <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088">
             Conditions of Use

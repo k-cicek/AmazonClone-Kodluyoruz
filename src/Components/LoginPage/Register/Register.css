@@ -155,7 +155,7 @@ body {
   box-shadow: 0 0 6px #f2820a;
 }
 
-.footer > p {
+.registerFooter > p {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
@@ -164,21 +164,21 @@ body {
   color: #555;
 }
 
-.footer > p > a {
+.registerFooter > p > a {
   color: #0066c0;
 }
 
-.footer > p > a:link {
+.registerFooter > p > a:link {
   text-decoration: none;
   color: #fff;
 }
 
-.footer > p > a:hover {
+.registerFooter > p > a:hover {
   border-bottom: 1px solid;
   color: #c35500;
 }
 
-.line {
+.registerLine {
   width: 100%;
   border-top: 1px solid #e2dede;
   margin-top: 30px;

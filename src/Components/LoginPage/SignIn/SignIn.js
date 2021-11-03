@@ -29,14 +29,15 @@ function SignIn({ loginUser, errorSetting }) {
 
     try {
       if (password && email) {
-        await login(email.trim(), password);
-        history.push("/");
+        let ok = await login(email.trim(), password);
+        history.push("/home");
         return;
       } else {
-        alert("Enter your password");
+        alert("sifreyi tekrar giriniz");
       }
     } catch {
-      alert("Please check your email or password!");
+      alert("Lütfen email veya şifresinizi kontrol ediniz!");
+
     }
   };
 
@@ -96,8 +97,8 @@ function SignIn({ loginUser, errorSetting }) {
         </div>
       </div>
 
-      <hr className="line" />
-      <div className="footer">
+      <hr className="signInLine" />
+      <div className="signInFooter">
         <p>
           <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088">
             Conditions of Use

@@ -35,19 +35,19 @@
  cursor: pointer;
 }
 
-.body {
+.modalBody {
  width: 400px;
 			min-height: 170px;
 			background-color: white;
 			text-align: left;
 }
 
-.body > p {
+.modalBody > p {
  padding-top: 50px;
 	padding-left: 10px;
 
 }
 
-.title > h4 {
+.modalTitle > h4 {
 	padding-left: 10px;
 }

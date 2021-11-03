@@ -6,7 +6,7 @@ function Modal(props) {
     <div className="modalBackground">
       <div className="modalContainer">
         <div className="modalHeader">
-        <div className="title">
+        <div className="modalTitle">
           <h4>"Keep Me Signed In" Checkbox</h4>
         </div>
           <button
@@ -21,7 +21,7 @@ function Modal(props) {
         </div>
 
         
-        <div className="body">
+        <div className="modalBody">
           <p>
             Choosing "Keep me signed in" reduces the number of times you're
             asked to Sign-In on this device.

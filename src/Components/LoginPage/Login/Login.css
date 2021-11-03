@@ -62,13 +62,13 @@ body {
 .login_divider {
   text-align: center;
   position: relative;
-  top: 2px;
+  top: 16px;
   padding-top: 1px;
   line-height: 0;
 }
 
 .login_divider > h5 {
-  line-height: 1;
+  line-height: 4;
   font-size: 12px;
   color: #767676;
   font-weight: 400;
@@ -87,16 +87,16 @@ body {
   z-index: 1;
 }
 .login_divider::after {
-  left: 7em;
+  left: 6em;
   margin-right: -50%;
 }
 .login_divider::before {
-  right: 7em;
+  right: 6em;
   margin-left: -50%;
 }
 
 .login_container {
-  width: 300px;
+  width: 350px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -123,20 +123,21 @@ transform: rotate(-90deg);
   text-align: left;
   font-size: 28px;
   line-height: 1.2;
+  margin-bottom: 10px;
 }
 
 .login_container > form > h5 {
   font-size: 13px;
   font-weight: 700;
   margin-bottom: 5px;
-  margin-right: 104px;
+  text-align: left;
 }
 
 .login_container > form > input {
   height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   background-color: #fff;
-  width: 98%;
+  width: 100%;
   border: 1px solid #a6a6a6;
   border-radius: 3px;
   box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
@@ -150,9 +151,13 @@ transform: rotate(-90deg);
 
 .login_container > p {
   margin-top: 15px;
-  font-size: 12px;
+  font-size: 11px;
   text-align: left;
   font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  width: 85%;
+
 }
 
 .login_container > p > a {
@@ -195,10 +200,10 @@ transform: rotate(-90deg);
 
 .login_register {
   border-radius: 2px;
-  width: 340px;
+  width: 350px;
   height: 35px;
   border: 1px solid;
-  margin-top: -40px;
+  margin-top: 10px;
   border-color: darkgray;
   box-shadow: 0 1px 1px rgb(255 255 255 / 60%) inset;
   font-size: 12.5px;
@@ -221,7 +226,7 @@ transform: rotate(-90deg);
   box-shadow: 0 0 6px #f2820a;
 }
 
-.footer > p {
+.loginFooter > p {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
@@ -230,17 +235,19 @@ transform: rotate(-90deg);
   color: #555;
 }
 
-.footer > p > a {
+.loginFooter > p > a {
   color: #0066c0;
 }
 
-.footer > p > a:hover {
+.loginFooter > p > a:hover {
   border-bottom: 1px solid;
   color: #c35500;
 }
 
-.line {
+.loginLine {
   width: 100%;
   border-top: 1px solid #e2dede;
   margin-top: 30px;
 }
+
+

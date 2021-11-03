@@ -20,7 +20,7 @@ body {
 }
 
 .signIn_container {
-  width: 300px;
+  width: 350px;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -36,21 +36,21 @@ body {
   text-align: left;
   font-size: 28px;
   line-height: 1.2;
+  margin-bottom: 15px;
 }
 
 .signIn_text {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 3px;
 }
 
 .signIn_text > h5 {
   font-size: 13px;
   font-weight: 700;
-  margin-bottom: 5px;
 }
 
 .signIn_text > p {
-  margin-top: 22px;
   font-size: 12px;
   text-align: left;
   font-weight: 500;
@@ -74,7 +74,7 @@ body {
   height: 30px;
   margin-bottom: 10px;
   background-color: #fff;
-  width: 98%;
+  width: 100%;
   border: 1px solid #a6a6a6;
   border-radius: 3px;
   box-shadow: 0 1px 0 rgb(255 255 255 / 50%), 0 1px 0 rgb(0 0 0 / 7%) inset;
@@ -131,7 +131,7 @@ body {
   box-shadow: 0 0 6px #f2820a;
 }
 
-.footer > p {
+.signInFooter > p {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
@@ -140,36 +140,38 @@ body {
   color: #555;
 }
 
-.footer > p > a {
+.signInFooter > p > a {
   color: #0066c0;
 }
 
-.footer > p > a:link {
+.signInFooter > p > a:link {
   text-decoration: none;
   color: #fff;
 }
 
-.footer > p > a:hover {
+.signInFooter > p > a:hover {
   border-bottom: 1px solid;
   color: #c35500;
 }
 
-.line {
+.signInLine  {
   width: 100%;
   border-top: 1px solid #e2dede;
   margin-top: 30px;
 }
 
+
 .signIn_checkbox {
  display: flex;
- margin-top: 10px;
+ margin-top: 13px;
  font-size: 13px;
- margin-left: -3px;
+ margin-left: 3px;
  font-weight: 500;
 }
 
 .signIn_checkbox .icon{
-  margin-top: -19px;
+  margin-top: -10px;
+  margin-left: 5px;
  }
 
 .signIn_checkbox > label > input {
@@ -187,7 +189,8 @@ body {
 }
 
 .signIn_button > h5 {
- margin-top: 2px;
+ margin-top: -3px;
+ font-size: 13px;
   
 }
 
@@ -196,9 +199,5 @@ body {
   color: #c35500;
   cursor: pointer;
 }
-
-
-
-
 
 

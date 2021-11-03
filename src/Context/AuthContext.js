@@ -22,6 +22,7 @@ export const AuthProvider = ({ children }) => {
   const logout = () => {
     return auth.signOut();
   };
+  
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
