@@ -22,7 +22,7 @@
 /* Hover */
 .hover-white-border {
   display: flex;
-  padding: 0.5rem;
+  padding: 0.4rem;
   border: 1px solid transparent;
   margin-left: 0.3rem;
 }
@@ -48,27 +48,24 @@
   padding: 0.7rem;
 }
 
-.nav-left {
+#nav-header .nav-left {
   display: flex;
   align-items: center;
 }
 
-.nav-fill {
-  display: flex;
-  align-items: center;
-  flex: 7;
-}
-
-.nav-right {
+#nav-header .nav-fill {
   display: flex;
   align-items: center;
 }
 
+#nav-header .nav-right {
+  display: flex;
+  align-items: center;
+}
 
 .nav-hamburger-menu {
   background-color: #232f3e;
 }
-
 
 /* SidebarMenu*/
 
@@ -77,7 +74,7 @@
   height: 80px;
   display: flex;
   justify-content: start;
-  align-items: center;  
+  align-items: center;
 }
 
 .menu-bars {
@@ -117,12 +114,13 @@
 
 .nav-text a {
   text-decoration: none;
-  color:black;
+  color: black;
   font-size: 18px;
   width: 95%;
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 16px;
   border-radius: 4px;
 }
@@ -142,8 +140,4 @@
   display: flex;
   justify-content: start;
   align-items: center;
-}
-
-span {
-  margin-left: 16px;
 }

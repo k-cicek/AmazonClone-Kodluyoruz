@@ -68,19 +68,19 @@
   padding: 0.7rem;
 }
 
-.nav-left {
+#nav-belt .nav-left {
   display: flex;
   align-items: center;
 }
 
-.nav-fill {
+#nav-belt .nav-fill {
   display: flex;
   align-items: center;
   margin-left: 0.5rem;
-  flex: 4;
+  flex: 1;
 }
 
-.nav-right {
+#nav-belt .nav-right {
   display: flex;
   align-items: center;
   padding-left: 0.1rem;
@@ -99,7 +99,7 @@
 .location-container {
   display: flex;
   flex-direction: row;
-  min-width: 6rem;
+  min-width: 7rem;
   max-height: 3.4rem;
 }
 .location-logo-container {
@@ -237,7 +237,6 @@
   margin-right: 1rem;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   flex: 1;
 }
 .cart-count-container {
@@ -262,7 +261,6 @@
 .cart-text-container {
   display: flex;
   align-items: flex-end;
-  text-align: end;
 }
 
 @media (max-width: 1024px) {

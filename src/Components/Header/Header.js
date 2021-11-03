@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { hamburgerMenu } from "./assets/img/index";
-import { Link } from "react-router-dom";
-import { SidebarData } from "./Sidebar/SidebarData";
-
+import Sidebar from "./Sidebar/Sidebar";
 
 function Header() {
   const [sidebar, setSidebar] = useState(false);
@@ -12,31 +10,24 @@ function Header() {
   return (
     <div id="nav-header">
       <div className="nav-left">
-        <button href="/" className="nav-hamburger-menu hover-white-border"
-        onClick={ showSidebar }>
-          <img className="hamburger-menu" src={hamburgerMenu} alt="cart" />
+        <button
+          href="/"
+          className="nav-hamburger-menu hover-white-border"
+          onClick={showSidebar}
+        >
+          <img
+            className="hamburger-menu"
+            src={hamburgerMenu}
+            alt="hamburgerMenu"
+          />
 
           <div className="menu-line">All</div>
-          
-          <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-          <ul className='nav-menu-items' onClick={showSidebar}>
-            <li className='navbar-toggle'>
-              <Link to='#' className='menu-bars'>
-                x
-              </Link>
-            </li>
-            {SidebarData.map((item, index) => {
-              return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>
-                    {item.icon}
-                    <span>{item.title}</span>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </nav>
+
+          <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+            <ul className="nav-menu-items" onClick={showSidebar}>
+              <Sidebar />
+            </ul>
+          </nav>
         </button>
       </div>
       <div className="nav-fill">
